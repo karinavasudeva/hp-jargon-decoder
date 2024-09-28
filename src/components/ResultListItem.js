@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const ResultListItem = ({ term, plainEnglish, example }) => {
+const ResultListItem = ({ term, plainEnglish, example, image }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -12,6 +12,7 @@ const ResultListItem = ({ term, plainEnglish, example }) => {
       </div>
       {isExpanded && (
         <div className="list-item-content">
+          {image && <img src={`${process.env.PUBLIC_URL}/${image}`} alt={term} className="list-item-image" />}
           <p><strong>Plain English:</strong> {plainEnglish}</p>
           <p><strong>Example:</strong> {example}</p>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
 
-const ResultCard = ({ term, plainEnglish, example }) => {
+const ResultCard = ({ term, plainEnglish, example, image }) => {
   const [isExampleVisible, setIsExampleVisible] = useState(false);
 
   const toggleExample = () => setIsExampleVisible(!isExampleVisible);
@@ -9,6 +9,11 @@ const ResultCard = ({ term, plainEnglish, example }) => {
   return (
     <div className="result-card">
       <h2 className="card-title">{term}</h2>
+      {image && (
+        <div className="card-image">
+          <img src={`${process.env.PUBLIC_URL}/${image}`} alt={term} />
+        </div>
+      )}
       <p className="definition">{plainEnglish}</p>
       <button className="toggle-example" onClick={toggleExample}>
         {isExampleVisible ? (
