@@ -2,12 +2,14 @@ const jargonDatabase = [
     {
             term: "Activities of Daily Living (ADL)",
             plainEnglish: "The basic tasks that keep you from looking like a caveman who just discovered fire. Think eating, dressing, and personal hygiene.",
-            example: "After breaking both arms, Jim needed help with his ADLs. Suddenly, his roommate became his personal stylist, chef, and toothbrush operator. Talk about friendship goals!"
+            example: "After breaking both arms, Jim needed help with his ADLs. Suddenly, his roommate became his personal stylist, chef, and toothbrush operator. Talk about friendship goals!",
+            image: "images/adl.jpg"
         },
         {
             term: "Acute Care",
             plainEnglish: "The medical equivalent of putting out fires. It's short-term, intense care for when your body decides to throw a tantrum.",
-            example: "After trying to prove he could still do a backflip at 40, Tom's weekend plans changed from 'Netflix and chill' to 'ER and bills.' Acute care: turning 'hold my beer' moments into medical adventures."
+            example: "After trying to prove he could still do a backflip at 40, Tom's weekend plans changed from 'Netflix and chill' to 'ER and bills.' Acute care: turning 'hold my beer' moments into medical adventures.",
+            image: "images/acutecare.jpg"
         },
         {
             term: "Ambulatory Care",
@@ -182,7 +184,8 @@ const jargonDatabase = [
         {
             term: "Doughnut Hole",
             plainEnglish: "Medicare's cruel joke where drug coverage takes a coffee break. It's the 'awkward middle child' of prescription benefits – not fully covered, not fully your problem.",
-            example: "Edna hit the doughnut hole in her Medicare drug coverage. 'Finally, a doughnut that's not sweet,' she grumbled while reaching for her wallet."
+            example: "Edna hit the doughnut hole in her Medicare drug coverage. 'Finally, a doughnut that's not sweet,' she grumbled while reaching for her wallet.",
+            image: "images/donut-hole.jpg"
         },
         {
             term: "Dual Eligible",
